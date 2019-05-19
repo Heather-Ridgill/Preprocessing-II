@@ -1,1 +1,29 @@
 // Mixins in here
+
+// .custom-btn (@footer-bg, @another-btn-clr) {
+//     color: @footer-bg;
+//     background-color: @another-btn-clr;
+
+//     &:hover{
+//         background-color: @font-color;
+//         color: @button-bg;
+//         cursor: pointer;
+//     }
+// }
+    .custom-btn () {
+        border: 2px solid black;
+        color: white;
+        text-align: center;
+        font-size: 23px;
+        border-radius: 25px;
+        background-color:@button-bg;
+        margin: 18px;
+        padding:15px;
+
+    &:hover{
+        background-color: @font-color;
+        color: @button-bg;
+        cursor: pointer;
+    }
+}
+

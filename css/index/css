@@ -1,3 +1,13 @@
+.btn {
+  border: 2px solid black;
+  color: white;
+  text-align: center;
+  font-size: 23px;
+  border-radius: 20px;
+  background-color: #17A2B8;
+  margin: 18px;
+  padding: 15px;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -169,21 +179,23 @@ img {
   margin: 0 auto;
 }
 header {
-  text-align: center;
   justify-content: space-between;
   font-size: 20px;
   margin: 40px;
+  margin-bottom: 90px;
   border-bottom: 2px dashed #C0C0C0;
   padding-bottom: 30px;
 }
-header nav {
-  margin-top: 20px;
-}
 header nav a {
-  padding: 15px;
+  margin-left: 30px;
 }
 header h1 {
   margin-left: 30px;
+}
+@media max-width: 500px {
+  header {
+    display-wrap: wrap;
+  }
 }
 .footer {
   width: 100%;
@@ -196,116 +208,41 @@ header h1 {
   font-size: 1.6rem;
   padding: 20px;
 }
-.btn {
-  border: 2px solid black;
-  color: white;
-  text-align: center;
-  font-size: 23px;
-  border-radius: 25px;
-  background-color: #17A2B8;
-  margin: 18px;
-  padding: 15px;
-}
-.btn:hover {
-  background-color: #212529;
-  color: #17A2B8;
-  cursor: pointer;
-}
-.home .content-intro {
+.home .content-section {
   margin: 30px 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
-@media (max-width: 500px) {
-  .home .content-intro {
-    width: 100%;
-    padding-right: 0%;
-    flex-direction: column;
-    align-items: center;
-    padding-bottom: 30px;
-    border-bottom: 2px dashed #C0C0C0;
-  }
-  .home .content-intro .img-content {
-    margin: 30px 0;
-    border-radius: 70px;
-  }
+.home .content-section .text-content {
+  width: 48%;
+  padding-right: 1%;
 }
-@media (max-width: 500px) and (max-width: 500px) {
-  .home .content-intro .img-content {
-    width: 100%;
-  }
+.home .content-section .img-content {
+  width: 48%;
+  padding-left: 1%;
 }
-.home .content-section {
-  margin: 30px 0;
-  display: flex;
-  justify-content: space-between;
-}
-@media (max-width: 500px) {
-  .home .content-section {
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-  }
-}
-.home .text-content {
-  padding: 20px;
-  align-items: center;
-}
-@media (max-width: 500px) {
-  .home .text-content {
-    width: 100%;
-    align-items: center;
-  }
-}
-.home .img-content2 {
-  width: 210%;
-  padding: 20px;
-  border-radius: 50px;
-}
-@media (max-width: 500px) {
-  .home .img-content2 {
-    width: 100%;
-    padding-right: 0%;
-  }
+.home .content-section .img-content img {
+  border-radius: 10px;
 }
 .home .inverse-content {
-  align-items: center;
+  padding-bottom: 30px;
   border-bottom: 2px dashed #C0C0C0;
 }
-@media (max-width: 500px) {
-  .home .inverse-content {
-    display: flex;
-    flex-direction: column-reverse;
-  }
-}
-.home .inverse-content .text-content2 {
+.home .inverse-content .text-content {
   padding-left: 1%;
   padding-right: 0;
 }
-.home .inverse-content .img-content3 {
-  width: 210%;
-  padding-right: 20px;
-  border-radius: 50px;
-}
-@media (max-width: 500px) {
-  .home .inverse-content .img-content3 {
-    width: 100%;
-  }
+.home .inverse-content .img-content {
+  padding-right: 1%;
+  padding-left: 0;
 }
 .home .content-destination {
   width: 75%;
   margin: 0 auto 30px;
 }
-.home .content-destination .img {
-  margin: 30px 0;
-  border-radius: 50px;
-}
-@media (max-width: 500px) {
-  .home .content-destination {
-    width: 100%;
-    padding: 20px;
-  }
+.home .content-destination img {
+  border-radius: 10px;
 }
 .home .content-pick {
   padding-top: 30px;
@@ -313,11 +250,7 @@ header h1 {
   display: flex;
   justify-content: space-between;
 }
-@media (max-width: 500px) {
-  .home .content-pick {
-    width: 100%;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-  }
+.home .content-pick .destination {
+  width: 30%;
+  margin-bottom: 30px;
 }
